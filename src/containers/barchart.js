@@ -1,15 +1,16 @@
 import React from 'react';
+var BarChart = require("react-chartjs").Bar;
 
-class BarChart extends React.Component{
+class Barchart extends React.Component{
 
   render() {
-
+    console.log(this.props.mileageData);
     return(
       <div>
-        BarChart
+        <BarChart data={this.props.mileageData} />
       </div>
     )
   }
 }
 
-export default BarChart;
+export default Barchart;
